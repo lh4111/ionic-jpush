@@ -1,23 +1,4 @@
-# ionic-jpush
-ionic jpush plugin
-
-# Use
-
-#### clone this repository
-```
-cd PROJECT_ROOT/node_modules/@ionic-native/
-
-git clone https://github.com/lh4111/ionic-jpush.git
-
-mv ionic-jpush j-push
-```
-#### 如何使用
-
-```
-
-```
-
-#### 在项目中使用
+### 如何使用
 
 1. 在当前项目`node_modules/@ionic-native/`下创建目录`j-push` 复制本项目文件到该目录下
   > 建议不要使用git clone直接下载到改文件夹下，不然以后更新依赖时会报错
