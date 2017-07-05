@@ -1,5 +1,5 @@
 {
-  "name": "@ionic-native/j-push",
+  "name": "ionic3-push",
   "version": "1.0.0",
   "description": "Ionic Native - Native plugins for JPush",
   "module": "index.js",
