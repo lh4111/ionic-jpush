@@ -12,7 +12,7 @@ npm i ionic3-jpush -S
 3. 在`app.module.ts`中引入,并加入到`@NgModule`的 `providers` 中
 
 ```
-import { JPush } from 'ionic3j-jpush';
+import { JPush } from 'ionic3-jpush';
 
 @NgModule({
   ...
