@@ -68,7 +68,9 @@ export class MyApp {
 - [x] receiveNotification(): Observable<any>;
 - [x] receiveMessage(): Observable<any>;
 
-v1.1.0 update
+v1.1.0 update iOS Api
+- [x] setApplicationIconBadgeNumber(badgeNum?: number): Promise<any>;
+- [x] getApplicationIconBadgeNumber(): Promise<any>;
 - [x] addLocalNotificationForIOS(option: LocalNotificationOption): Promise<any>;
 - [x] deleteLocalNotificationWithIdentifierKeyInIOS(identifierKey: String): Promise<any>;
 - [x] clearAllLocalNotifications(): Promise<any>;
