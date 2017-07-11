@@ -39,10 +39,16 @@ export class MyApp {
     this.jPush.getRegistrationID().then(regid => {
       console.log(regid)
     })
+
   }
 }
 
 ```
+
+### Api说明
+- [通用 API 说明（同时适用于 Android 和 iOS 系统）](https://github.com/jpush/jpush-phonegap-plugin/blob/master/doc/Common_detail_api.md)
+- [iOS API](https://github.com/jpush/jpush-phonegap-plugin/blob/master/doc/iOS_API.md)
+- [Android API ](https://github.com/jpush/jpush-phonegap-plugin/blob/master/doc/Android_detail_api.md)
 
 ### 实现方法
 
@@ -62,3 +68,11 @@ export class MyApp {
 - [x] receiveNotification(): Observable<any>;
 - [x] receiveMessage(): Observable<any>;
 
+v1.1.0 update
+- [x] addLocalNotificationForIOS(option: LocalNotificationOption): Promise<any>;
+- [x] deleteLocalNotificationWithIdentifierKeyInIOS(identifierKey: String): Promise<any>;
+- [x] clearAllLocalNotifications(): Promise<any>;
+- [x] setLocation(latitude: String | Number, longitude: String | Number): Promise<any>;
+- [x] isPlatformIOS(): Promise<any>;
+- [x] addDismissActions(actions: any, categoryId: String): Promise<any>;
+- [x] addNotificationActions(actions: any, categoryId: String): Promise<any>;
