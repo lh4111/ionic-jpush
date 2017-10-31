@@ -1,3 +1,24 @@
+### 更新说明
+
+官方phonegap插件jpush-phonegap-plugin更新了Api。
+ionic3-jpush 1.2.0 需要jpush-phonegap-plugin >= 3.2.4。
+
+>若你的项目适用jpush-phonegap-plugin < 3.24 请使用 ionic3-jpush 1.1.0 `npm i ionic3-jpush@1.1 --save`
+
+#### 以下Api参数发生变化
+Alias API
+- setAlias
+- deleteAlias
+- getAlias
+
+Tag API
+- setTags
+- addTags
+- deleteTags
+- cleanTags
+- getAllTags
+- checkTagBindState
+
 ### 如何使用
 1. 安装官方Cordova插件
 ```
@@ -49,32 +70,3 @@ export class MyApp {
 - [通用 API 说明（同时适用于 Android 和 iOS 系统）](https://github.com/jpush/jpush-phonegap-plugin/blob/master/doc/Common_detail_api.md)
 - [iOS API](https://github.com/jpush/jpush-phonegap-plugin/blob/master/doc/iOS_API.md)
 - [Android API ](https://github.com/jpush/jpush-phonegap-plugin/blob/master/doc/Android_detail_api.md)
-
-### 实现方法
-
-> 因项目需求只实现了目前项目中使用到的方法,如需更多方法请提交issue
-
-- [x] init(): Promise<any>;
-- [x] stopPush(): Promise<any>;
-- [x] resumePush(): Promise<any>;
-- [x] isPushStopped(): Promise<any>;
-- [x] getRegistrationID(): Promise<any>;
-- [x] setTagsWithAlias(tags?: string[], alias?: string): Promise<any>;
-- [x] setTags(tags?: string[]): Promise<any>;
-- [x] setAlias(alias?: string): Promise<any>;
-- [x] setBadge(badgeNum?: number): Promise<any>;
-- [x] getUserNotificationSettings(): Promise<any>;
-- [x] openNotification(): Observable<any>;
-- [x] receiveNotification(): Observable<any>;
-- [x] receiveMessage(): Observable<any>;
-
-v1.1.0 update iOS Api
-- [x] setApplicationIconBadgeNumber(badgeNum?: number): Promise<any>;
-- [x] getApplicationIconBadgeNumber(): Promise<any>;
-- [x] addLocalNotificationForIOS(option: LocalNotificationOption): Promise<any>;
-- [x] deleteLocalNotificationWithIdentifierKeyInIOS(identifierKey: String): Promise<any>;
-- [x] clearAllLocalNotifications(): Promise<any>;
-- [x] setLocation(latitude: String | Number, longitude: String | Number): Promise<any>;
-- [x] isPlatformIOS(): Promise<any>;
-- [x] addDismissActions(actions: any, categoryId: String): Promise<any>;
-- [x] addNotificationActions(actions: any, categoryId: String): Promise<any>;
