@@ -1,3 +1,9 @@
+## ionic3-jpush
+
+[![npm](https://img.shields.io/npm/dm/ionic3-jpush.svg)](https://www.npmjs.com/package/ionic3-jpush)
+
+基于ionic3 和 ionic-native3 的极光推送封装 
+
 ### 更新说明
 
 官方phonegap插件jpush-phonegap-plugin更新了Api。
